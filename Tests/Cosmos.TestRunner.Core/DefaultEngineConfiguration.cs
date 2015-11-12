@@ -24,15 +24,17 @@ namespace Cosmos.TestRunner.Core
             //engine.RunIL2CPUInProcess = true;
 
             engine.EnableStackCorruptionChecks = true;
+
             //engine.RunWithGDB = true;
+            //engine.StartBochsDebugGui = true;
 
             // Select kernels to be tested by adding them to the engine
-            engine.AddKernel(typeof(VGACompilerCrash.Kernel).Assembly.Location);
-            engine.AddKernel(typeof(Cosmos.Compiler.Tests.Bcl.Kernel).Assembly.Location);
-            engine.AddKernel(typeof(Cosmos.Compiler.Tests.SingleEchoTest.Kernel).Assembly.Location);
-            engine.AddKernel(typeof(Cosmos.Compiler.Tests.SimpleWriteLine.Kernel.Kernel).Assembly.Location);
-            engine.AddKernel(typeof(SimpleStructsAndArraysTest.Kernel).Assembly.Location);
-            engine.AddKernel(typeof(Cosmos.Compiler.Tests.Exceptions.Kernel).Assembly.Location);
+            //engine.AddKernel(typeof(VGACompilerCrash.Kernel).Assembly.Location);
+            //engine.AddKernel(typeof(Cosmos.Compiler.Tests.Bcl.Kernel).Assembly.Location);
+            //engine.AddKernel(typeof(Cosmos.Compiler.Tests.SingleEchoTest.Kernel).Assembly.Location);
+            //engine.AddKernel(typeof(Cosmos.Compiler.Tests.SimpleWriteLine.Kernel.Kernel).Assembly.Location);
+            //engine.AddKernel(typeof(SimpleStructsAndArraysTest.Kernel).Assembly.Location);
+            //engine.AddKernel(typeof(Cosmos.Compiler.Tests.Exceptions.Kernel).Assembly.Location);
 
             // Known bugs, therefore disabled for now:
             //engine.AddKernel(typeof(BoxingTests.Kernel).Assembly.Location);
@@ -40,6 +42,7 @@ namespace Cosmos.TestRunner.Core
 
             // Experimental stuff:
             //engine.AddKernel(typeof(Cosmos.Kernel.Tests.Fat.Kernel).Assembly.Location);
+            engine.AddKernel(typeof(Cosmos.Kernel.Tests.FileSystemPlugs.Kernel).Assembly.Location);
 
             // end of known bugs
 

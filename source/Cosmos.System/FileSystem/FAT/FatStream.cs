@@ -1,27 +1,20 @@
 ﻿using System;
-<<<<<<< HEAD:source/Cosmos.System/FileSystem/FAT/FatDirectoryStream.cs
-=======
+
 using System.Collections.Generic;
 using System.IO;
->>>>>>> 3f00b2d319537562849077d2c11479e27997e93b:source/Cosmos.System/FileSystem/FAT/FatStream.cs
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-<<<<<<< HEAD:source/Cosmos.System/FileSystem/FAT/FatDirectoryStream.cs
-=======
 
->>>>>>> 3f00b2d319537562849077d2c11479e27997e93b:source/Cosmos.System/FileSystem/FAT/FatStream.cs
 using Cosmos.System.FileSystem.FAT.Listing;
 
 namespace Cosmos.System.FileSystem.FAT
 {
-<<<<<<< HEAD:source/Cosmos.System/FileSystem/FAT/FatDirectoryStream.cs
     public class FatDirectoryStream : BaseFatStream
     {
         public FatDirectoryStream(FatDirectory directory) : base(directory, directory.FileSystem, directory.FirstClusterNum)
         {
-
-=======
+		}
     public class FatStream : Stream
     {
         protected readonly FatDirectoryEntry mDirectoryEntry;
@@ -283,7 +276,7 @@ namespace Cosmos.System.FileSystem.FAT
             }
 
             mPosition += (ulong)aOffset;
->>>>>>> 3f00b2d319537562849077d2c11479e27997e93b:source/Cosmos.System/FileSystem/FAT/FatStream.cs
         }
     }
+}
 }
